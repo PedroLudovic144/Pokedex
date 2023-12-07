@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.pokedex-container,
+.team-container,
+.details-container {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.pokemon-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .pokemon-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .pokemon-card {
+        width: calc(100% - 20px);
+    }
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-card img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Other styles remain unchanged */
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: calc(100% - 20px);
+    }
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#searchInput {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#reload-btn {
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#reload-btn:hover {
+    background-color: #00608E;
+}
