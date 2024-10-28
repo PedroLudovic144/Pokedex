@@ -7,7 +7,7 @@ $(document).ready(function() {
     let team = [];
 
     function loadAllPokemonSequentially(id, searchQuery = null) {
-        if (id <= 251) {
+        if (id <= 1000) {
             const apiUrl = searchQuery
                 ? `https://pokeapi.co/api/v2/pokemon/${searchQuery}`
                 : `https://pokeapi.co/api/v2/pokemon/${id}`;
